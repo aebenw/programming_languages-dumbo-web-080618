@@ -11,7 +11,7 @@ def reformat_languages(languages)
     hash.each do |lang, mohash|
       mohash.each do |tip, specific|
         new_hash[lang] = :type 
-        new_hash[lang][:typle][specific]
+        new_hash[lang][:type][specific]
       end
     end
   end
