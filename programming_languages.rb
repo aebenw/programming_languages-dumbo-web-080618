@@ -10,7 +10,7 @@ def reformat_languages(languages)
     types << style
     hash.each do |lang, mohash|
       mohash.each do |type, specific|
-        new_hash[lang] = {[:type] = specific, [:style] = [:00]}
+        new_hash[lang] = {:type: specific, :style: 00]}
       end
     end
   end
