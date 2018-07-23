@@ -8,6 +8,7 @@ def reformat_languages(languages)
   
   languages.each do |style, hash|
     level_one << style 
+    hash.each do |lang
   end
   
   p level_one
