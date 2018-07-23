@@ -1,14 +1,16 @@
 require 'pry'
 
 def reformat_languages(languages)
-  level_one= []
-  level_two = []
+  types= []
+  langs = []
   level_three= []
   new_hash = {}
   
   languages.each do |style, hash|
-    level_one << style 
-    hash.each do |lang
+    types << style 
+    hash.each do |lang, mohash|
+      langs << lang
+      mohash.each do 
   end
   
   p level_one
