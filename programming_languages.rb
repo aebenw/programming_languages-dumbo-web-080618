@@ -9,7 +9,7 @@ def reformat_languages(languages)
   languages.each do |style, hash|
     hash.each do |lang, mohash|
       mohash.each do |type, specific|
-        new_hash[lang] = {type: [specific,style}}
+        new_hash[lang] = {type: [specific,style]}
       end
     end
   end
