@@ -4,5 +4,5 @@ def reformat_languages(languages)
   new_hash = {}
       binding.pry
 
-   first_level = languages[]
+   first_level = languages.each do 
 end
