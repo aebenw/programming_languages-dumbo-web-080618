@@ -1,4 +1,7 @@
+require 'pry'
+
 def reformat_languages(languages)
   new_hash = {}
-  p first_level = languages[]
+   first_level = languages[]
+   binding.pry
 end
