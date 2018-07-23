@@ -6,12 +6,12 @@ def reformat_languages(languages)
   level_three= []
   new_hash = {}
   
-  languages.each do |style, hash|
-    types << style
+  languages.each do |type, hash|
+    types << type
     hash.each do |lang, mohash|
       mohash.each do |tip, specific|
         new_hash[lang] = mohash 
-        # new_hash[lang][:type][specific]
+         new_hash[lang][:type][:style] = types
       end
     end
   end
